@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Navbar dengan Bootstrap</title>
+  <!-- Link ke stylesheet Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .carousel {
+      height: 600px; /* Mengatur tinggi carousel */
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card {
+      margin: 60px;
+    }
+
+    .logo-card {
+      margin-top: 20px;
+      padding: 50px;
+      background-color: #f8f9fa;
+      display: flexbox;
+      width: max-content;
+      align-items: end;
+    }
+    
+    .logo-card img {
+      width: 100%;
+      height: 200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/1200x400?text=Slide+1" alt="Slide 1">
+        <div class="carousel-caption">
+          <h3>Slide 1 Heading</h3>
+          <p>Slide 1 Description</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1200x400?text=Slide+2" alt="Slide 2">
+        <div class="carousel-caption">
+          <h3>Slide 2 Heading</h3>
+          <p>Slide 2 Description</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1200x400?text=Slide+3" alt="Slide 3">
+        <div class="carousel-caption">
+          <h3>Slide 3 Heading</h3>
+          <p>Slide 3 Description</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-md-12">
+        <div class="card-group">
+          <div class="logo-card">
+            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="logo-card">
+            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="logo-card">
+            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Card Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-between">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 1 Title</h5>
+            <p class="card-text">Card 1 Description</p>
+          </div>
+        </div>
+        <!-- Tambahkan card lainnya di sini -->
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 1 Title</h5>
+            <p class="card-text">Card 1 Description</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 1 Title</h5>
+            <p class="card-text">Card 1 Description</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+<!-- Link ke skrip Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

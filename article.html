@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Page Artikel</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <style>
+         .article-footer {
+         background: #f5f5f5;
+         padding: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Navbar -->
+      <div id="navbar-container"></div>
+      <!-- Artikel -->
+      <div class="container mt-4">
+         <div class="row">
+            <div class="col-md-8 offset-md-2">
+               <img src="https://images.pexels.com/photos/34600/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Gambar Artikel">
+               <h1 class="mt-4">Judul Artikel</h1>
+               <p class="text-muted">
+                  Oleh <a href="mailto:author@example.com">Author</a> | Tanggal Posting: 2023-08-16
+               </p>
+               <div class="article-content">
+                <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate porttitor mi nec commodo. 
+                     Nulla ut erat sed turpis mattis faucibus id in tortor. Duis tincidunt dui diam, 
+                     at sodales mi lobortis id. Donec commodo, enim ut condimentum posuere, mauris nulla varius neque, 
+                     eget dignissim justo mauris eu tortor. Vivamus dolor libero, venenatis et blandit nec, gravida id eros. 
+                     Morbi condimentum nulla at fringilla gravida. Suspendisse potenti. Proin ut dui metus. 
+                     Vestibulum vitae rhoncus metus, et mattis nibh. In odio nunc, hendrerit et tincidunt at, laoreet in velit. 
+                     Donec feugiat turpis auctor, aliquam magna id, fermentum dolor. Fusce fringilla mollis efficitur. 
+                     Cras vel odio pretium, bibendum nisi ac, tincidunt mi. Etiam eget malesuada lectus. 
+                     Nulla quis bibendum ligula, ac rhoncus dui.
+                </p>
+                <p>Mauris fermentum convallis dictum. Proin imperdiet vitae lectus in consequat. 
+                    Nulla viverra malesuada efficitur. Quisque in urna in lorem faucibus vulputate. In hac habitasse platea dictumst. 
+                    Phasellus congue ligula felis. Nunc pharetra rutrum mi sed faucibus. 
+                    Proin eleifend ex at dolor varius, sed tristique ante tristique. Donec quis mauris sollicitudin, 
+                    egestas tortor sed, fringilla libero. Nunc blandit lacus sed nisi posuere, sit amet sodales turpis 
+                    ullamcorper. Mauris imperdiet egestas cursus. Donec et consectetur magna. Nullam eu nibh vitae diam 
+                    mollis mattis.
+                </p>
+                <p>Praesent nec quam leo. Praesent ut semper tortor. Sed sed dolor cursus, rhoncus enim sed, sodales augue. 
+                    Aliquam erat volutpat. Ut purus libero, porttitor non felis nec, molestie tempus lacus. 
+                    Praesent pharetra est lorem, et pellentesque dui fringilla ac. Fusce tempus lorem enim, 
+                    eu maximus erat consequat vitae. Quisque urna eros, congue in orci eget, rutrum tempor erat. 
+                    Mauris gravida quis lorem ut auctor. Suspendisse fermentum ex eu cursus luctus. Praesent aliquam 
+                    cursus elit a cursus. Suspendisse ex ex, fermentum in odio ut, laoreet elementum est. Integer 
+                    fermentum risus libero, vitae viverra purus condimentum eget. Nulla vitae auctor justo, ut 
+                    finibus purus. Vestibulum sapien urna, tincidunt quis ultricies at, 
+                    rhoncus eu justo.
+                </p>
+                  <!-- ... -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <div class="article-footer">
+         <div class="container text-center">
+            <button class="btn btn-outline-primary" onclick="location.href='previous.html'">Previous</button>
+            <button class="btn btn-outline-primary" onclick="location.href='next.html'">Next</button>
+         </div>
+      </div>
+      <!-- Scripts untuk Navbar -->
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           fetch('navbar.html')
+             .then(response => response.text())
+             .then(data => document.querySelector("#navbar-container").innerHTML = data);
+         });
+      </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   </body>
+</html>

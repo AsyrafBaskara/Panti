@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel - Yayasan Panti Asuhan</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Artikel -->
+  <div class="container mt-4">
+    <h2>Artikel</h2>
+    <div class="row">
+      <!-- Card 3x3 -->
+      <!-- Baris 1 -->
+      <div class="col-md-4 mb-4">
+        <a href="artikel1.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="https://ponpesalmustaqim.files.wordpress.com/2014/04/dsc01207.jpg?w=665" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <p class="card-text">Deskripsi singkat artikel 1 di sini.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="artikel1.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="gambar1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <p class="card-text">Deskripsi singkat artikel 1 di sini.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="artikel1.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="gambar1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <p class="card-text">Deskripsi singkat artikel 1 di sini.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="artikel1.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="gambar1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <p class="card-text">Deskripsi singkat artikel 1 di sini.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="artikel1.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="https://ponpesalmustaqim.files.wordpress.com/2014/04/dsc01207.jpg?w=665" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <p class="card-text">Deskripsi singkat artikel 1 di sini.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="artikel1.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="gambar1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <p class="card-text">Deskripsi singkat artikel 1 di sini.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="artikel1.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="gambar1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <p class="card-text">Deskripsi singkat artikel 1 di sini.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="artikel1.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="gambar1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <p class="card-text">Deskripsi singkat artikel 1 di sini.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="artikel1.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="https://ponpesalmustaqim.files.wordpress.com/2014/04/dsc01207.jpg?w=665" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Judul Artikel 1</h5>
+              <p class="card-text">Deskripsi singkat artikel 1 di sini.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- (Ulangi struktur di atas untuk card lainnya) -->
+      <!-- ... -->
+    </div>
+
+    <!-- Pagination -->
+    <div class="d-flex justify-content-end">
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Scripts untuk Navbar -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.querySelector("#navbar-container").innerHTML = data);
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

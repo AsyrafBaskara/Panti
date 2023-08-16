@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - Yayasan Panti Asuhan</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Sejarah Yayasan -->
+  <div class="container mt-4">
+    <h2>Sejarah Yayasan</h2>
+    <p>Deskripsi tentang sejarah yayasan di sini.</p>
+  </div>
+
+  <!-- Tim dan Pengelola -->
+  <div class="container">
+    <h2>Tim dan Pengelola</h2>
+    <!-- Bisa tambahkan card atau layout lain untuk tim -->
+  </div>
+
+  <!-- Program dan Kegiatan -->
+  <div class="container">
+    <h2>Program dan Kegiatan</h2>
+    <p>Deskripsi tentang program dan kegiatan di sini.</p>
+  </div>
+
+  <!-- Misi dan Visi -->
+  <div class="container">
+    <h2>Misi dan Visi</h2>
+    <p>Misi dan visi yayasan di sini.</p>
+  </div>
+
+  <!-- Kontak dan Lokasi -->
+  <div class="container">
+    <h2>Kontak dan Lokasi</h2>
+    <p>Alamat, email, dan nomor telepon di sini.</p>
+  </div>
+
+  <!-- Bagaimana Berkontribusi atau Berdonasi -->
+  <div class="container">
+    <h2>Berkontribusi</h2>
+    <p>Informasi tentang bagaimana berkontribusi atau berdonasi di sini.</p>
+  </div>
+
+  <!-- Scripts untuk Navbar -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.querySelector("#navbar-container").innerHTML = data);
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
