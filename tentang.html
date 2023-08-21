@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <style>
+         .about-card {
+         width: 1000px;
+         height: auto;
+         margin: 0 auto;
+         margin-bottom: 20px;
+         padding-left: 10px;
+         }
+         .about-image {
+         padding: 10px;
+         }
+         .about-image img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         border: 5px solid #000; /* Stroke */
+         border-radius: 50px;
+         }
+         h2 {
+         padding: 10px; /* Padding untuk tag 
+         <h2>
+         */
+         }
+         .image-container {
+         width: 500px;
+         height: 300px;
+         border: 2px solid #000;
+         }
+         .image-container img {
+         object-fit: cover;
+         width: 100%;
+         height: 100%;
+         }
+         .custom-text {
+         font-size: 19px;
+         padding-left: 170px;
+         }
+      </style>
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+             fetch('navbar.html').then(response => response.text()).then(data => document.querySelector("#navbar-container").innerHTML = data);
+         });
+      </script>
+      <title>About Us</title>
+   </head>
+   <body>
+      <div id="navbar-container"></div>
+      <div class="logo-container text-center">
+         <img src="assets/logo/pantialmustaqim.png" alt="Logo Panti Al-Mustaqim" class="logo-image">
+      </div>
+      <div class="container mt-4">
+         <h1 class="text-center" style="padding-bottom: 10px;" >Sejarah Yayasan</h1>
+         <div class="container-fluid" style="padding-bottom: 10px">
+            <div class="row">
+               <!-- Bagian Gambar -->
+               <div class="col-4">
+                  <div class="image-container">
+                     <img src="assets/image/bangunanlksadepan.jpg" alt="Gambar" />
+                  </div>
+               </div>
+               <!-- Bagian Paragraf -->
+               <div class="col-8">
+                  <p class="card-text text-justify custom-text" style="padding-top: 30px;">Pondok Pesantren dan Panti Asuhan Yatim Piatu Al-Mustaqim dikenal tidak hanya sebagai lembaga pendidikan, tetapi juga sebagai lembaga keagamaan dan sosial. Dalam perjalanan sejarah pendidikan di Indonesia, peran pesantren tidak diragukan lagi. Sebelum berbagai macam sekolah seperti saat ini, pesantren jauh lebih dulu telah memberikan kontribusi yang besar bagi dunia pendidikan dan pembentukan kualitas sumber daya manusia Indonesia.</p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <!-- Bagian Gambar -->
+               <div class="col-4" style="padding-top: 70px;">
+                  <div class="image-container" >
+                     <img src="assets/image/bangunanlksadepan.jpg" alt="Gambar" />
+                  </div>
+               </div>
+               <!-- Bagian Paragraf -->
+               <div class="col-8">
+                  <p class="card-text text-justify custom-text">Pada masa awalnya, Pondok Pesantren dan Panti Asuhan Yatim Piatu Al-Mustaqim sangat kental dengan tradisi pengajian kitab-kitab klasik, dengan elemen-elemen pesantren lainnya seperti pondok dan masjid. Namun dewasa ini, seiiring dengan laju modrenitas kita kenal dengan dua model pesantren:<br> (1) Pesantren yang masih mempertahankan pengajaran kitab klasik (kitab kuning) dan tidak memasukkan pelajaran-pelajaran umum di dalamnya.<br> (2). Pesasntren yang memasukkan pelajaran umum dalam madrasah dan sekolah yang dikembangkan.<br> Dalam Pondok Pesantren dan Panti Asuhan Yatim Piatu Al-Mustaqim ini kedua model tersebut diterapkan artinya tetap mempertahankan kitab-kitab klasik sekaligus memberikan pelajaran-pelajaran yangt bersifat umum (Ukhrowi  dan Duniawi).</p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid" style="padding-top: 30px">
+            <div class="row">
+               <!-- Bagian Gambar -->
+               <div class="col-4">
+                  <div class="image-container">
+                     <img src="assets/image/bangunanlksadepan.jpg" alt="Gambar" />
+                  </div>
+               </div>
+               <!-- Bagian Paragraf -->
+               <div class="col-8">
+                  <p class="card-text text-justify custom-text" style="padding-top: 30px;">Selain sebagai lembaga pendidikan, Pondok Pesantren dan Panti Asuhan Yatim Piatu Al-Mustaqim juga sebagai lembaga keagamaan dan sosial sehingga menjadi agen perubahan dan pembangunan masyarakat. Karena itu, kini Pondok Pesantren dan Panti Asuhan Yatim Piatu Al-Mustaqim telah menjadi pusat pemberdayaan masyarakat, ditunjukkan dengan berbagai kegiatan yang menunjang untuk menciptakan sumber daya manusia (SDM) yang memiliki kompetensi yang tinggi.</p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid" style="padding-top: 30px">
+            <div class="row">
+               <!-- Bagian Gambar -->
+               <div class="col-4">
+                  <div class="image-container">
+                     <img src="assets/image/bangunanlksadepan.jpg" alt="Gambar" />
+                  </div>
+               </div>
+               <!-- Bagian Paragraf -->
+               <div class="col-8">
+                  <p class="card-text text-justify custom-text" style="padding-top: 30px;">Fenomena globalisasi seperti sekarang ini melahirkan karakter indivudualisme dan pola hidup meterialistik yang kian mengental. Disinilah peran Pondok Pesantren dan Panti Asuhan Yatim Piatu Al-Mustaqim untuk tetap konsisten dengan menyuguhkan suatu sistem yang mampu menjembatani kebutuhan fisik (jasmani) dan kebutuhan spiritual (rohani) manusia.</p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid" style="padding-top: 30px">
+            <div class="row">
+               <!-- Bagian Gambar -->
+               <div class="col-4" style="padding-top: 10px">
+                  <div class="image-container">
+                     <img src="assets/image/bangunanlksadepan.jpg" alt="Gambar" />
+                  </div>
+               </div>
+               <!-- Bagian Paragraf -->
+               <div class="col-8">
+                  <p class="card-text text-justify custom-text" style="padding-top: 5px">Yayasan Pondok Pesantren dan Panti Asuhan Yatim Piatu Al-Mustaqim berdiri sejak tanggal 04 Juni 2000 yang didirikan oleh Kyai Mustaqim (Alm). Awal mulanya pengasuh tidak mempunyai keinginan ataupun harapan untuk mendidrikan Pondok Pesantren dan Panti Asuhan Yatim Piatu akan tetapi melihat semakin banyaknya anak yang belajar (mengaji) bahkan sampai menginap di rumah beliau akhirnya beliau pun merenung, dalam benaknya beliau berkata gimana cara ngasih makan anak-anak kalau seperti ini. Tapi beliau tidak putus asa, berbagai macam cara beliau lakukan biar anak-anak tetap belajar.</p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid" style="padding-top: 30px">
+            <div class="row">
+               <!-- Bagian Gambar -->
+               <div class="col-4">
+                  <div class="image-container">
+                     <img src="assets/image/bangunanlksadepan.jpg" alt="Gambar" />
+                  </div>
+               </div>
+               <!-- Bagian Paragraf -->
+               <div class="col-8">
+                  <p class="card-text text-justify custom-text">Tahun demi tahun beliau lalui  akhirnya ada tamu tidak diundang yang katanya utusan dari Kementerian Agama Kabupaten Malang (KEMENAG), orang tersebut menganjurkan kepada Aba Mustaqim (Pengasuh) untuk dijadikan Yayasan saja agar mendapat legalitas dari pemerintah setempat sekaligus untuk mempermudah adanya sebuah bantuan, tapi apa jawab beliau: mohon maaf kami tidak tertarik dengan usulan njenengan. Beberapa kali orang utusan dari KEMENAG tersebut datang dan menganjurkan agar di buat Yayasan tapi tetap jawab pengasuh yaitu tidak mau.</p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid" style="padding-top: 30px">
+            <div class="row">
+               <!-- Bagian Gambar -->
+               <div class="col-4">
+                  <div class="image-container">
+                     <img src="assets/image/bangunanlksadepan.jpg" alt="Gambar" />
+                  </div>
+               </div>
+               <!-- Bagian Paragraf -->
+               <div class="col-8">
+                  <p class="card-text text-justify custom-text">Lambat laun sampai pada tahun 2006 barulah beliau terbesit dalam fikirannya untuk menjadikan yayasan, dan akhirnya jadilah namanya Yayasan Pondok Pesantren dan Panti Asuhan Yatim Piatu Al-Mustaqim.   Sampai saat ini jumlah anak asuh kami mencapai 172 anak asuh/santri yang kesemuanya biaya hidup digratiskan (di tanggung Yayasan). Setelah beliau wafat (Kyai Mustaqim) pada tahun 2011, tonggak kepemimpinan Yayasan Pondok Pesantren dan Panti Asuhan Yatim Piatu Al-Mustaqim saat ini di pimpin langsung oleh Nyai Hj. Ruhani (Istri Alm Kyai Mustaqim).</p>
+               </div>
+            </div>
+         </div>
+         <div class="container mt-4 text-center">
+            <h2>Struktur Lembaga</h2>
+            <img src="assets/logo/strukturlembaga.png" alt="Struktur Lembaga" style="width:800px; height:auto; padding-bottom:10px">
+         </div>
+         <div class="container mt-4">
+            <div class="card border-0">
+               <div class="card-body">
+                  <h2 class="text-center">Visi</h2>
+                  <p class="text-justify" style="font-size:20px;">
+                     Terwujudnya Yayasan sosial dan pendidikan yang berbasis pesantren yang memiliki imtaq, menguasai iptek, terampil, mandiri, dan berakhlak mulia.
+                  </p>
+                  <h2 class="text-center">Misi</h2>
+                  <ul style="font-size:20px; text-align: justify;">
+                     <li>Menyelenggarakan yayasan dengan berbasis pesantren</li>
+                     <li>Membekali anak didik / klien dengan IMTAQ, IPTEK, keterampilan agar menjadi anak yang sholeh dan mandiri</li>
+                     <li>Memberikan pelayanan kepada anak sesuai dengan hak-hak anak dan sistem keberlanjutan layanan asuhan dan kependidikan</li>
+                     <li>Optimalisasi potensi anak sesuai dengan bakat dan minat masing-masing.</li>
+                     <li>Meningkatkan kemampuan kelembagaan dan pelayanan sosial</li>
+                     <li>Menjadikan yayasan yang mandiri dan mencetak kader agar mempunyai budi pekerti yang luhur.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="container mt-4">
+            <div class="row">
+               <!-- Kontak dan Nomor Kontak -->
+               <div class="col-md-4">
+                  <div class="card border-0">
+                     <div class="card-body">
+                        <h2 class="text-center">Kontak Kami</h2>
+                        <p style="font-size:20px; text-align:center;">
+                           <strong>NOMOR KONTAK:</strong>
+                           <br>(0341) 420 986
+                           <br>081 333 444 711
+                           <br>085 855 494 899
+                           <br>082 130 309 055
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Lokasi -->
+               <div class="col-md-4">
+                  <div class="card border-0">
+                     <div class="card-body">
+                        <h2 class="text-center">Lokasi</h2>
+                        <p style="font-size:20px; text-align:center;">
+                           <strong>ALAMAT:</strong> <br>Jl. Ketindan No. 215 RT/RW: 04/04<br> Ds. Ketindan Kec. Lawang Kab. Malang Prov. Jawa Timur <br>Kode Pos: 65214
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Rekening Untuk Donasi -->
+               <div class="col-md-4">
+                  <div class="card border-0">
+                     <div class="card-body">
+                        <h2 class="text-center">Rekening untuk Donasi</h2>
+                        <p style="font-size:20px; text-align:center;">
+                           <strong>BANK JATIM : 0592105501</strong>
+                           <br>a/n : LKSA AL-MUSTAQIM
+                           <br>
+                           <strong>BCA : 3160285484</strong>
+                           <br>a/n : RUHANI (Pengasuh)
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   </body>
+</html>

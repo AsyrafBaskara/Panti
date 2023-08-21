@@ -1,191 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Halaman Beranda</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => document.querySelector("#navbar-container").innerHTML = data);
-        });
-      </script>
-      <style>
-         .menu-card img {
-         height: 100px; /* Tinggi gambar menu */
-         width: auto;
-         }
-         .gallery-card img {
-         height: 100px; /* Ukuran gambar gallery */
-         width: auto;
-         }
-         .separator {
-         border-top: 2px solid #ccc;
-         margin: 20px 0;
-         }
-      </style>
-   </head>
-   <body>
-    <div id="navbar-container"></div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Halaman Beranda</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				fetch('navbar.html').then(response => response.text()).then(data => document.querySelector("#navbar-container").innerHTML = data);
+			});
+		</script>
+		<style>
+			.menu-card img {
+				height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+				width: auto;
+			}
 
-      <!-- Carousel -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-         </ol>
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <img src="https://via.placeholder.com/1200x400?text=Slide+1" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-               <img src="https://via.placeholder.com/1200x400?text=Slide+2" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-               <img src="https://via.placeholder.com/1200x400?text=Slide+3" class="d-block w-100" alt="...">
-            </div>
-         </div>
-         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-         <span class="sr-only">Previous</span>
-         </a>
-         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-         <span class="sr-only">Next</span>
-         </a>
-      </div>
-      <!-- Menu Cards -->
-      <div class="container mt-4">
-         <div class="row">
-            <div class="col-sm menu-card">
-               <div class="card">
-                  <img src="assets/image/tentang.jpg" class="card-img-top" alt="...">
-               </div>
-            </div>
-            <div class="col-sm menu-card">
-               <div class="card">
-                  <img src="assets/image/mi.jpg" class="card-img-top" alt="...">
-               </div>
-            </div>
-            <div class="col-sm menu-card">
-               <div class="card">
-                  <img src="assets/image/mts.jpg" class="card-img-top" alt="...">
-               </div>
-            </div>
-            <div class="col-sm menu-card">
-               <div class="card">
-                  <img src="assets/image/ma.jpg" class="card-img-top" alt="...">
-               </div>
-            </div>
-            <div class="col-sm menu-card">
-               <div class="card">
-                  <img src="assets/image/daftaranak.jpg" class="card-img-top" alt="...">
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Article Cards -->
-      <div class="container mt-4">
+         .menu-card {
+            padding-bottom: 10px;
+         }
+
+			.gallery-card img {
+				height: 100px;
+				/* Ukuran gambar gallery */
+				width: auto;
+			}
+
+			.separator {
+				border-top: 2px solid #ccc;
+				margin: 20px 0;
+			}
+
+			.card-title {
+				color: black;
+			}
+			.card-text {
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="navbar-container"></div>
+		<!-- Carousel -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://via.placeholder.com/1200x400?text=Slide+1" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="https://via.placeholder.com/1200x400?text=Slide+2" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="https://via.placeholder.com/1200x400?text=Slide+3" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<!-- Menu Cards -->
+		<div class="container mt-4">
+			<h2>Pendidikan Formal</h2>
+			<hr>
+			<div class="row">
+				<div class="col-sm menu-card">
+					<a href="#">
+						<div class="card">
+							<img src="assets/logo/mi.jpg" class="card-img-top" alt="...">
+						</div>
+					</a>
+				</div>
+				<div class="col-sm menu-card">
+					<a href="#">
+						<div class="card">
+							<img src="assets/logo/mts.jpg" class="card-img-top" alt="...">
+						</div>
+					</a>
+				</div>
+				<div class="col-sm menu-card">
+					<a href="#">
+						<div class="card">
+							<img src="assets/logo/ma.jpg" class="card-img-top" alt="...">
+						</div>
+					</a>
+				</div>
+			</div>
+			<h2>Pendidikan Non Formal</h2>
+			<hr>
+			<div class="row">
+				<div class="col-sm menu-card">
+					<a href="#">
+						<div class="card">
+							<img src="assets/logo/pondokpesantren.png" class="card-img-top" alt="...">
+						</div>
+					</a>
+				</div>
+				<div class="col-sm menu-card">
+					<a href="#">
+						<div class="card">
+							<img src="assets/logo/pantiasuhan.png" class="card-img-top" alt="...">
+						</div>
+					</a>
+				</div>
+				<div class="col-sm menu-card">
+					<a href="#">
+						<div class="card">
+							<img src="assets/logo/madrasahdiniyah.png" class="card-img-top" alt="...">
+						</div>
+					</a>
+				</div>
+			</div>
+			<!-- ... -->
+		</div>
+		 <!-- Article Cards -->
+       <div class="container mt-4">
          <h3>Article</h3>
          <div class="separator"></div>
          <div class="row">
-            <div class="col-md" href="article.html">
+            <div class="col-md">
+               <a href="#">
                <div class="card">
                   <img src="assets/image/artikel1.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                      <h5 class="card-title">Judul Artikel 1</h5>
                      <p class="card-text">Deskripsi artikel 1.</p>
                   </div>
-               </div>
+               </div></a>
             </div>
             <div class="col-md">
+               <a href="#">
                <div class="card">
                   <img src="assets/image/artikel2.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                      <h5 class="card-title">Judul Artikel 2</h5>
                      <p class="card-text">Deskripsi artikel 2.</p>
                   </div>
-               </div>
+               </div></a>
             </div>
             <div class="col-md">
+               <a href="#">
                <div class="card">
                   <img src="assets/image/artikel3.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                     <h5 class="card-title">Judul Artikel 3</h5>
+                     <h5 class="card-title" >Judul Artikel 3</h5>
                      <p class="card-text">Deskripsi artikel 3.</p>
                   </div>
-               </div>
+               </div></a>
             </div>
          </div>
-         <nav aria-label="Page navigation" class="text-right">
-            <ul class="pagination justify-content-end">
-               <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-               <li class="page-item"><a class="page-link" href="#">1</a></li>
-               <li class="page-item"><a class="page-link" href="#">2</a></li>
-               <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-         </nav>
+         <div class="d-flex justify-content-end">
+            <a href="artikel.html">Selengkapnya</a>
+          </div>
       </div>
-      <!-- Gallery Cards -->
-      <div class="container mt-4">
-         <h3>Gallery</h3>
-         <div class="separator"></div>
-         <div class="row">
-            <div class="col-4">
-               <div class="card">
-                  <img src="assets/image/galeri1.jpg" class="card-img-top" alt="...">
-               </div>
-               <div class="card mt-2">
-                  <img src="assets/image/galeri2.jpg" class="card-img-top" alt="...">
-               </div>
-            </div>
-            <div class="col-4">
-               <div class="card">
-                  <img src="assets/image/galeri3.jpg" class="card-img-top" alt="...">
-               </div>
-               <div class="card mt-2">
-                  <img src="assets/image/galeri4.jpg" class="card-img-top" alt="...">
-               </div>
-            </div>
-            <div class="col-4">
-               <div class="card">
-                  <img src="assets/image/galeri5.jpg" class="card-img-top" alt="...">
-               </div>
-               <div class="card mt-2">
-                  <img src="assets/image/galeri6.jpg" class="card-img-top" alt="...">
-               </div>
-            </div>
-         </div>
-         <nav aria-label="Page navigation" class="text-right">
-            <ul class="pagination justify-content-end">
-               <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-               <li class="page-item"><a class="page-link" href="#">1</a></li>
-               <li class="page-item"><a class="page-link" href="#">2</a></li>
-               <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-         </nav>
-      </div>
-      <!-- Pagination -->
-      <div class="container mt-4">
-         <nav aria-label="Page navigation">
-            <ul class="pagination">
-               <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-               <li class="page-item"><a class="page-link" href="#">1</a></li>
-               <li class="page-item"><a class="page-link" href="#">2</a></li>
-               <li class="page-item"><a class="page-link" href="#">3</a></li>
-               <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-         </nav>
-      </div>
-      <!-- Footer -->
-      <footer class="container mt-4">
-         <p class="text-center">&copy; Hak Cipta 2023</p>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   </body>
+		<!-- Gallery Cards -->
+		<div class="container mt-4">
+			<h3>Gallery</h3>
+			<div class="separator"></div>
+			<div class="row">
+				<div class="col-4">
+					<a href="#">
+						<div class="card">
+							<img src="assets/image/galeri1.jpg" class="card-img-top" alt="...">
+						</div>
+					</a>
+					<a href="#">
+						<div class="card mt-2">
+							<img src="assets/image/galeri2.jpg" class="card-img-top" alt="...">
+						</div>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="#">
+						<div class="card">
+							<img src="assets/image/galeri3.jpg" class="card-img-top" alt="...">
+						</div>
+					</a>
+					<a href="#">
+						<div class="card mt-2">
+							<img src="assets/image/galeri4.jpg" class="card-img-top" alt="...">
+						</div>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="#">
+						<div class="card">
+							<img src="assets/image/galeri5.jpg" class="card-img-top" alt="...">
+						</div>
+					</a>
+					<a href="#">
+						<div class="card mt-2">
+							<img src="assets/image/galeri6.jpg" class="card-img-top" alt="...">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="d-flex justify-content-end">
+				<a href="gallery.html">Selengkapnya</a>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="container mt-4">
+			<p class="text-center">&copy; Hak Cipta 2023</p>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
 </html>
